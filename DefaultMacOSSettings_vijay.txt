@@ -1,0 +1,37 @@
+New User Set up:
+1.  Install brew.sh
+    1.  Install fish
+      >brew install fish
+      >fish_config #update your fish settings
+      1.  (Optional) Make fish default shell
+        >chsh -s /usr/local/bin/fish
+    2.  Install python - search and do all changes required to install and update python links.
+      https://docs.python-guide.org/starting/install3/osx/
+
+    3.  Install item2
+      >brew cask install iterm2
+      #set a hotkey
+
+2.  Install Sublime
+  1.  Add the following text to Preferences>Settings
+    // Settings in here override those in "Default/Preferences.sublime-settings",
+// and are overridden in turn by syntax-specific settings.
+{
+    "color_scheme": "Packages/Color Scheme - Default/Twilight.tmTheme",
+    "font_size": 12,
+    "ignored_packages":
+    [
+        "Vintage"
+    ],
+    "tab_size": 2,
+    "translate_tabs_to_spaces": true,
+    "word_wrap": true,
+    "trim_trailing_white_space_on_save": true,
+    "scroll_past_end": true,
+    "highlight_modified_tabs": true
+}
+  2.  Update default text editor to Sublime for .txt, .js, .java etc extensions
+  3.  Run the following commands in Terminal:
+      >open /Applications/Sublime\ Text.app/Contents/SharedSupport/bin/subl
+      >ln -s "/Applications/Sublime Text.app/Contents/SharedSupport/bin/subl" /usr/local/bin/sublime
+      Next time use sublime <filename> to open files in sublime
