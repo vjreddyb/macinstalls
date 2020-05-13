@@ -1,7 +1,7 @@
 # Options
 set __fish_git_prompt_show_informative_status
 set __fish_git_prompt_showcolorhints
-set __fish_git_prompt_showupstream "informative"
+set __fish_git_prompt_showupstream "verbose"
 
 # Colors
 set green (set_color green)
@@ -37,7 +37,7 @@ function fish_prompt
   set last_status $status
 
   set_color $fish_color_cwd
-  printf '%s' (prompt_pwd)
+  printf '%s' (whoami)@(hostname -s)\[(prompt_pwd)\]
   set_color normal
 
   printf '%s ' (__fish_git_prompt)
